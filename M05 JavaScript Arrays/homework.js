@@ -151,15 +151,7 @@ function todosIguales(array) {
    // Si todos los elementos del arreglo son iguales, retornar true.
    // Caso contrario retornar false.
    // Tu código:
-   var sonIguales = (array)=>{
-      array === array
-   };
-   
-   if(array.every(sonIguales)){
-      return true;
-   }else{
-      return false;
-   }
+  return array.every(num => array[0] == num);
 }
 
 function mesesDelAño(array) {
