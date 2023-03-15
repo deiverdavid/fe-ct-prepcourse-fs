@@ -176,12 +176,21 @@ function tablaDelSeis() {
    // Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
    // La función devuelve un arreglo con los resultados de la tabla de multiplicar del 6 en orden creciente.
    // Tu código:
+   var tablaSeis;
+   var arrayTabSeis = [];
+   for (var i = 0; i <= 10; i++) {
+      tablaSeis = 6 * i;
+      arrayTabSeis.push(tablaSeis);
+   }
+   return arrayTabSeis;
 }
 
 function mayorACien(array) {
    // La función recibe un arreglo con enteros entre 0 y 200.
    // Recorrerlo y retornar un arreglo con todos los valores mayores a 100 (no incluye el 100).
    // Tu código:
+
+   
 }
 
 /* ----------------------------------------------------------------------------------
