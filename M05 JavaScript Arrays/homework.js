@@ -103,6 +103,13 @@ function multiplicarArgumentos() {
    // Si no se pasan argumentos retorna 0. Si se pasa un argumento, simplemente retórnalo.
    // [PISTA]: "arguments" es un arreglo.
    // Tu código:
+   if (arguments.length === 0) return 0;
+   if (arguments.length === 1) return arguments[0];
+   var numeroNeutro = 1;
+   for (var i = 0; i < arguments.length; i++) {
+      numeroNeutro = numeroNeutro * arguments[i];
+   }
+   return numeroNeutro;
 
 }
 
@@ -189,8 +196,14 @@ function mayorACien(array) {
    // La función recibe un arreglo con enteros entre 0 y 200.
    // Recorrerlo y retornar un arreglo con todos los valores mayores a 100 (no incluye el 100).
    // Tu código:
+   var arrayMayorDeCien = [];
+   for (var i = 0; i < array.length; i++) {
+      if (array[i] > 100) {
+         arrayMayorDeCien.push(array[i]);
+      }
+   }
+   return arrayMayorDeCien;
 
-   
 }
 
 /* ----------------------------------------------------------------------------------
@@ -204,6 +217,18 @@ function breakStatement(num) {
    // la ejecución y retornar el string: "Se interrumpió la ejecución".
    // [PISTA]: utiliza el statement 'break'.
    // Tu código:
+   var arrayAumentado = [];
+   for (var i = 0; i < 10; i++) {
+      num += 2;
+      arrayAumentado.push(num);
+      if (num === 10) {
+         return "Se interrumpió la ejecución";
+         break;
+      }
+   }
+
+   return arrayAumentado;
+
 }
 
 function continueStatement(num) {
@@ -213,6 +238,18 @@ function continueStatement(num) {
    // se continua con la siguiente iteración.
    // [PISTA]: utiliza el statement 'continue'.
    // Tu código:
+   var arrayAumentado = [];
+   for (var i = 0; i < 10; i++) {
+      if (i === 5) {
+         continue;
+      }
+      num += 2;
+      arrayAumentado.push(num);
+
+   }
+
+   return arrayAumentado;
+
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
